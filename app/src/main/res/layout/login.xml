@@ -70,6 +70,7 @@
         android:background="@drawable/roundedtextview"
         android:ems="10"
         android:textColor="#FFF"
+        android:inputType="textPersonName"
         android:textSize="@dimen/_14ssp"
         android:paddingLeft="@dimen/_10sdp">
 

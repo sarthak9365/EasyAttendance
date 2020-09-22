@@ -19,6 +19,7 @@ import android.widget.Toast;
 public class AddFacultyActivity extends Activity {
 
 	Button registerButton;
+	Button cancelButton;
 	EditText textFirstName;
 	EditText textLastName;
 	EditText textemail;
@@ -41,6 +42,7 @@ public class AddFacultyActivity extends Activity {
 		textusername=(EditText)findViewById(R.id.editTextUserName);
 		textpassword=(EditText)findViewById(R.id.editTextPassword);
 		registerButton=(Button)findViewById(R.id.RegisterButton);
+		cancelButton=(Button)findViewById(R.id.Cancel_Button);
 
 		registerButton.setOnClickListener(new OnClickListener() {
 
@@ -95,7 +97,17 @@ public class AddFacultyActivity extends Activity {
 
 			}
 		});
-
+		cancelButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				textFirstName.setText("");
+				textLastName.setText("");
+				textcontact.setText("");
+				textaddress.setText("");
+				textusername.setText("");
+				textpassword.setText("");
+			}
+		});
 
 
 	}

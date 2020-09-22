@@ -24,6 +24,7 @@ import android.widget.Toast;
 public class AddStudentActivity extends Activity {
 
 	Button registerButton;
+	Button cancelButton_student;
 	EditText textFirstName;
 	EditText textLastName;
 
@@ -46,6 +47,7 @@ public class AddStudentActivity extends Activity {
 		textcontact=(EditText)findViewById(R.id.editTextPhone);
 		textaddress=(EditText)findViewById(R.id.editTextaddr);
 		registerButton=(Button)findViewById(R.id.RegisterButton);
+		cancelButton_student=(Button)findViewById(R.id.Cancel_Button);
 
 		spinnerbranch.setOnItemSelectedListener(new OnItemSelectedListener() {
 			@Override
@@ -141,6 +143,19 @@ public class AddStudentActivity extends Activity {
 				}
 			}
 		});
+		cancelButton_student.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				textFirstName.setText("");
+				textLastName.setText("");
+				textcontact.setText("");
+				textaddress.setText("");
+				
+
+
+			}
+		});
+
 	}
 
 	@Override
