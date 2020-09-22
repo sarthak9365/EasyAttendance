@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreenbackground">
+
+
+        <TextView
+            android:id="@+id/textViewFormName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Registration "
+            android:textColor="#FFF"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/textViewFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/editTextFirstName"
+            android:layout_below="@+id/textViewFormName"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="FirstName"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFFFFF" />
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/textViewFirstName"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"/>
+
+        <TextView
+            android:id="@+id/textViewLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/editTextLastName"
+            android:layout_below="@+id/editTextFirstName"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="LastName"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/textViewLastName"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLastName"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_alignLeft="@id/editTextPhone"
+        android:text="Phone"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/textViewPhone"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextaddr"
+        android:layout_below="@+id/editTextPhone"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Address"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Cancel_Button"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/spinneryear"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:background="@drawable/roundedbutton"
+            android:text="Cancel"
+            android:textAllCaps="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/MessageforRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RegisterButton"
+            android:layout_marginTop="54dp"
+            android:layout_toRightOf="@+id/textViewUserName"
+            android:text=""
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewUserName"
+            android:layout_marginTop="14dp"
+            android:text=""
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextaddr"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/textViewAddress"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_below="@+id/editTextaddr"
+            android:text="Select dept"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinnerdept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_below="@+id/textView1"
+            android:backgroundTint="#FFF"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_below="@+id/editTextaddr"
+            android:text="Select Year"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinneryear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_38sdp"
+            android:backgroundTint="#FFF"/>
+
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_below="@+id/spinneryear"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/roundedbutton"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="#ffffff" />
+
+
+</RelativeLayout>
+

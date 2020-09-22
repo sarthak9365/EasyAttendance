@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreenbackground">
+
+
+        <TextView
+            android:id="@+id/textViewFormName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Registration"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/textViewFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextFirstName"
+            android:layout_below="@+id/textViewFormName"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="FirstName"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFFFFF" />
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/textViewFirstName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/textViewLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextFirstName"
+            android:layout_below="@+id/editTextFirstName"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="LastName"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignLeft="@+id/textViewLastName"
+            android:layout_below="@+id/textViewLastName"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/_10sdp" />
+
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/textViewPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextaddr"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Address"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Cancel_Button"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_above="@+id/MessageforRegister"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:background="@drawable/roundedbutton"
+             android:textColor="#ffffff"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_marginTop="51dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/roundedbutton"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/MessageforRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RegisterButton"
+            android:layout_marginTop="54dp"
+            android:layout_toRightOf="@+id/textViewUserName"
+            android:text=""
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/textViewPassword"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextPassword"
+            android:layout_below="@+id/editTextUserName"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="PassWord"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextaddr"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textViewUserName"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFF"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextPhone"
+            android:layout_below="@+id/editTextLastName"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Mobileno"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextUserName"
+            android:layout_below="@+id/editTextaddr"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="UserName"
+            android:textSize="@dimen/_14ssp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+        
+    </RelativeLayout>
+
